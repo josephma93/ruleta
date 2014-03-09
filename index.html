@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+	<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Parrillada con Carrito en L&iacute;nea</title>
+		<link rel="stylesheet" href="css/main.css">
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+			<p class="chromeframe">Usted está utilizando <strong>un navegador obsoleto.</strong> Por favor, <a href="http://browsehappy.com/" target="_blank">actualice su navegador</a> o <a href="http://www.google.com/chromeframe/?redirect=true" target="_blank">active Google Chrome Frame</a> para mejorar su experiencia.</p>
+		<![endif]-->
+
+		<div class="wrapper">
+			<div class="custumerLogo">&nbsp;</div>
+			<div class="promotionLogo">&nbsp;</div>
+			<div id="big_arrow">&nbsp;</div>
+			<div class="roulette">
+				<canvas id="wheelcanvas" width="543" height="656"></canvas>
+				<div id="roulette_arrow">&nbsp;</div>
+				<div id="roulette_axis">&nbsp;</div>
+				<div class="hidden">
+					<img src="img/logos/nutrisnacks.png" id="nutrisnacks" alt="nutrisnacks" class="provider" />
+					<img src="img/logos/tena.png" id="tena" alt="tena" class="provider" />
+					<img src="img/logos/clorox.png" id="clorox" alt="clorox" class="provider" />
+					<img src="img/logos/pozuelo.png" id="pozuelo" alt="pozuelo" class="provider" />
+					<img src="img/logos/kotex.png" id="kotex" alt="kotex" class="provider" />
+					<img src="img/logos/jacks.png" id="jacks" alt="jacks" class="provider" />
+					<img src="img/logos/numar.png" id="numar" alt="numar" class="provider" />
+					<img src="img/logos/none.png" id="none" alt="none" class="provider" />
+				</div>
+			</div>
+			<div class="promotionDescription">
+				<p>
+					<span class="sizeL">Hoy pap&aacute;</span> tiene la oprtunidad de participar <br />
+					"<span id="remainingAttempts">*</span> veces" por <span class="yellowColor sizeM">premios instant&aacute;neos</span>
+					en la ruleta de <br />
+					<span class="redColor sizeM">Carrito en Línea</span>
+				</p>
+			</div>
+			<div class="rotateButton ir" onclick="roulette.spin();">Gire aqu&iacute;</div>
+			<div class="promotionRestrictions">
+				Promoci&oacute;n v&aacute;lida del 1 al 30 de junio. <br />
+				Aplican restricciones. <a href="#" target="_blank">Ver Reglamento en Facebook</a>
+			</div>
+		</div>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script>
+			window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')
+		</script>
+		<script src="js/main.js"></script>		
+	</body>
+</html>
